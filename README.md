@@ -1,1 +1,1 @@
-# CarolinyGaldino-Portfolio
+# Welcome to my project portfolio! This collection showcases what I have learned as a junior software engineer, highlighting my skills, creativity, and ability to solve complex problems. Each project is a testament to my dedication to quality and attention to detail, and I am excited to share them with you.
