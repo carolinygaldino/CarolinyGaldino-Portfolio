@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: linear-gradient(267deg, #80ff7d 9.15%, #80ffff 91.38%);
+}
+
+/* Name */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Home-section */
+section {
+  padding: 20px;
+  text-align: center;
+}
+h2 {
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 30px;
+}
+p {
+  font-family: "Georgia";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+hr {
+  position: absolute;
+  width: 500px;
+  height: 0px;
+  left: 50px;
+  top: 470px;
+  border: 1px solid #000000;
+}
+
+/* Nav-Bar */
+nav {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
