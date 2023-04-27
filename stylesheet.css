@@ -1,76 +1,131 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   font-size: 16px;
   background: linear-gradient(267deg, #80ff7d 9.15%, #80ffff 91.38%);
 }
 
-/* Name */
+/* Name - TOP */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  font-family: Georgia;
 }
 h1 {
   margin: 0;
   font-size: 36px;
 }
 
-/* Home-section */
+/* Welcome - section */
 section {
   padding: 20px;
   text-align: center;
 }
 h2 {
   font-family: Georgia;
+  font-style: normal;
   font-size: 30px;
   font-weight: 700;
   line-height: 73px;
   letter-spacing: 0em;
   text-align: left;
-  padding-left: 30px;
 }
 p {
-  font-family: "Georgia";
-  font-size: 20px;
-  font-weight: 400;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: normal;
   line-height: 35px;
   text-align: left;
-  padding-left: 30px;
 }
-
-hr {
-  position: absolute;
-  width: 500px;
-  height: 0px;
-  left: 50px;
-  top: 470px;
-  border: 1px solid #000000;
-}
-
-/* Nav-Bar */
-nav {
+/* Animated - line */
+.animated-hr {
+  border: none;
+  height: 1px;
   background-color: #ccc;
-  padding: 10px;
-  text-align: center;
+  position: relative;
+  animation: expand 8s ease-in-out;
 }
-nav ul {
+
+@keyframes expand {
+  0% {
+    width: 0;
+    right: 50%;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    width: 100%;
+    right: 0;
+  }
+}
+
+/* nav - links */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Helvetica;
+}
+
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+
+li {
+  margin: 0 20px;
 }
-nav ul li a {
-  color: #333;
+
+a {
   text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
-nav ul li a:hover {
-  color: #fff;
-  background-color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
+
+a:hover {
+  color: #f44336;
+}
+
+@media screen and (max-width: 375px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+/* Container - About me */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  height: 300px;
+  margin: 10px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: lighter;
+  align-content: center;
+  line-height: 24px;
 }
