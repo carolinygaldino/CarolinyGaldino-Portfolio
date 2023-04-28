@@ -1,131 +1,167 @@
 body {
-  margin: 0;
-  font-size: 16px;
-  background: linear-gradient(267deg, #80ff7d 9.15%, #80ffff 91.38%);
+
+  background: linear-gradient(268deg, #80ff7d 9.15%, #80ffff 91.38%);
+  height: 2397px;
+
 }
 
-/* Name - TOP */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-family: Georgia;
-}
+/*------------- Header */
+
 h1 {
-  margin: 0;
-  font-size: 36px;
-}
 
-/* Welcome - section */
-section {
-  padding: 20px;
-  text-align: center;
-}
-h2 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 30px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 73px;
   letter-spacing: 0em;
-  text-align: left;
+  color: #252525;
+  margin-left: 108px;
+  margin-right: 516px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+
+
 }
-p {
+
+h2 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 35px;
-  text-align: left;
-}
-/* Animated - line */
-.animated-hr {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  position: relative;
-  animation: expand 8s ease-in-out;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 86px;
+  letter-spacing: 0em;
+  color: #252525;
+  margin-left: 109px;
+  margin-right: 660px;
+  margin-top: 139px;
+  margin-bottom: 0px;
+  width: 650px;
+  height: 258px;
+
 }
 
-@keyframes expand {
-  0% {
-    width: 0;
-    right: 50%;
-  }
-  50% {
-    right: 0;
-  }
-  100% {
-    width: 100%;
-    right: 0;
-  }
+/*------------------- Line  */
+hr {
+  border: 1px solid #000000;
+
+  width: 1228px;
+  margin-left: 109px;
+  margin-top: 200px;
+
 }
 
-/* nav - links */
+/*-------------------- Nav Bar */
+
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-family: Helvetica;
+
+  margin-top: 10px;
+  margin-left: 108px;
+  width: 1228px;
+  z-index: 1;
 }
 
-ul {
-  list-style-type: none;
+nav a {
+  text-decoration: none;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+nav a:hover {
+  color: rgb(244, 43, 170);
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  list-style: none;
+
 }
 
-li {
-  margin: 0 20px;
+nav li {
+  margin: 0 10px;
+
 }
 
-a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
+nav li#email {
+  margin-right: auto;
 }
 
-a:hover {
-  color: #f44336;
-}
-
-@media screen and (max-width: 375px) {
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  ul {
-    flex-direction: column;
-  }
-
-  li {
-    margin: 10px 0;
-  }
-}
-
-/* Container - About me */
-
+/*------------------- Section */
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 90px;
 }
 
-.box {
-  height: 300px;
-  margin: 10px;
-  font-family: Helvetica;
-  font-size: 16px;
+section p {
+  margin-right: 20px;
+  margin-left: 300px;
+  font-family: 'Helvetica Neue';
   font-style: normal;
-  font-weight: lighter;
-  align-content: center;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
+}
+
+aside p {
+  margin-left: 20px;
+  margin-right: 300px;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*------------------- Article */
+
+article {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+
+/* Frame */
+
+
+.project-frame {
+
+  width: 672.53px;
+  height: 509.87px;
+  left: 4.28px;
+  top: 4.28px;
+  background-image: url("/Doc/calculator.png");
+
+  box-shadow: 9.51242px 9.51242px 23.781px rgba(0, 0, 0, 0.35), 38.0497px 38.0497px 71.3431px rgba(0, 0, 0, 0.25);
+  border-radius: 23.781px;
 }

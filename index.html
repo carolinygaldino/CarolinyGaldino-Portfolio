@@ -4,44 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="/stylesheet.css" />
-    <!-- Email link -->
-    <meta charset="utf-8" />
   </head>
   <body>
+    <!---------- Header ---------->
+
     <header>
-      <h1>Caroliny Galdino</h1>
+      <h1>Hi,</h1>
+      <h2>I’m Caroliny Galdino, a software engineer based in London.</h2>
     </header>
+    <hr />
+    <!---------- Nav Bar ---------->
 
-    <section>
-      <h2>Hi,</h2>
-      <p>I’m a software engineer based in London.</p>
+    <nav>
+      <ul>
+        <li id="email">
+          Email:<a href="mailto:carolinygaldino@gmail.com" target="_blank">
+            carolinygaldino@gmail.com</a
+          >
+        </li>
+        <li id="downloadcv">
+          <a href="/Doc/Caroliny Galdino-CV.pdf" target="_blank">Download CV</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/carolinygaldino/" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li id="github">
+          <a href="https://github.com/carolinygaldino" target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-      <hr class="animated-hr" />
-      <br />
+    <!----------- Section ----------->
 
-      <nav>
-        <ul>
-          <li>
-            Email:<a href="mailto:carolinygaldino@gmail.com"
-              >carolinygaldino@gmail.com</a
-            >
-          </li>
-          <li><a href="/Doc/Caroliny Galdino-CV.pdf">Download CV</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/carolinygaldino/">LinkedIn</a>
-          </li>
-          <li><a href="https://github.com/carolinygaldino">GitHub</a></li>
-        </ul>
-      </nav>
-      <br /><br />
-      <div class="container">
-        <div class="box">
+    <div class="container">
+      <section>
+        <p>
           As an entry-level software engineer, I'm excited to showcase my
           personal projects and experimentation in this space. This portfolio is
           my laboratory, where I explore everything, and share what I've learned
           along the way.
-        
-    </section>
+        </p>
+      </section>
+      <aside>
+        <p>
+          I'm eager to learn and grow with every project I take on. Through this
+          portfolio, I hope to document my progress and share my experiences
+          with others who are also passionate about software engineering.
+        </p>
+      </aside>
+    </div>
+
+    <!----------- Article ------------->
+    <article class="project">
+      <h2>Project Title</h2>
+      <p>Description of the project goes here.</p>
+      <img src="project-image.jpg" alt="Project Image" />
+      <a href="project-details.html">Read more</a>
+    </article>
+
+    <article class="project-frame">
+      <!-- project content goes here -->
+    </article>
   </body>
 </html>
